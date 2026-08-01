@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <title>Envoke Fit — Protótipo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="phone" aria-label="Protótipo do aplicativo Envoke Fit">
+    <section class="screen active" id="home" data-screen="home">
+      <header class="hero">
+        <div class="brand">
+          <img src="../assets/brand/logo-evk-shield.png" alt="EVK">
+          <div>
+            <span>ENVOKE</span>
+            <strong>FIT</strong>
+          </div>
+        </div>
+        <button class="icon-button" aria-label="Notificações">●</button>
+        <div class="hero-copy">
+          <p>TERÇA, 28 DE JULHO</p>
+          <h1>Boa tarde,<br>Adair.</h1>
+          <span>Pronto para sentir a energia Envoke?</span>
+        </div>
+      </header>
+
+      <div class="content home-content">
+        <section class="next-class">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">PRÓXIMA AULA</span>
+              <h2>Envoke Training</h2>
+            </div>
+            <span class="status">CONFIRMADO</span>
+          </div>
+          <div class="class-time">
+            <strong>18:15</strong>
+            <div><b>Hoje</b><span>com Alysson Oliver</span></div>
+          </div>
+          <div class="capacity"><i style="width: 67%"></i></div>
+          <div class="capacity-label"><span>10 alunos confirmados</span><b>5 vagas</b></div>
+          <button class="primary" data-go="checkin">VER MINHA RESERVA →</button>
+        </section>
+
+        <section>
+          <div class="section-heading">
+            <h2>Hoje na Envoke</h2>
+            <button class="text-button" data-go="checkin">VER AGENDA</button>
+          </div>
+          <div class="quick-grid">
+            <button class="quick-card" data-go="wod"><span>WOD</span><strong>Metcon</strong><small>Treino liberado</small></button>
+            <button class="quick-card"><span>SEQUÊNCIA</span><strong>2 semanas</strong><small>Continue evoluindo</small></button>
+          </div>
+        </section>
+
+        <section class="community">
+          <div class="section-heading"><h2>Comunidade</h2><button class="text-button">VER TUDO</button></div>
+          <div class="post">
+            <div class="post-top"><div class="avatar">DS</div><div><b>Danielle Siqueira</b><span>Há 2 horas</span></div></div>
+            <div class="event-art"><span>18 JUL • 09:00</span><strong>ENVOKE<br>IN MOLHES</strong><em>Novos desafios.<br>Mesma energia.</em></div>
+            <div class="post-actions"><button>♡ 3 CURTIDAS</button><button>COMENTAR</button></div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="screen" id="checkin" data-screen="checkin">
+      <header class="page-header">
+        <span class="eyebrow">AGENDA</span>
+        <h1>Reserve seu treino</h1>
+        <p>Escolha um horário e garanta sua vaga.</p>
+      </header>
+      <div class="date-strip" aria-label="Seleção de dia">
+        <button><small>SEG</small><b>27</b></button>
+        <button class="selected"><small>TER</small><b>28</b></button>
+        <button><small>QUA</small><b>29</b></button>
+        <button><small>QUI</small><b>30</b></button>
+        <button><small>SEX</small><b>31</b></button>
+      </div>
+      <div class="content schedule">
+        <div class="filter-row"><span>6 horários disponíveis</span><button class="filter">⌁ FILTRAR</button></div>
+        <article class="class-row"><time>06:00</time><div><b>Envoke Training</b><span>Alysson Oliver</span></div><span class="spots">13 vagas</span><button>+</button></article>
+        <article class="class-row"><time>07:00</time><div><b>Envoke Training</b><span>Alysson Oliver</span></div><span class="spots">13 vagas</span><button>+</button></article>
+        <article class="class-row"><time>09:00</time><div><b>Envoke Training</b><span>Alysson Oliver</span></div><span class="spots warning">Última vaga</span><button>+</button></article>
+        <article class="class-row reserved"><time>18:15</time><div><b>Envoke Training</b><span>Alysson Oliver</span></div><span class="spots">Confirmado</span><button>✓</button></article>
+        <article class="class-row"><time>19:15</time><div><b>Envoke Training</b><span>Alysson Oliver</span></div><span class="spots">15 vagas</span><button>+</button></article>
+      </div>
+    </section>
+
+    <section class="screen" id="wod" data-screen="wod">
+      <header class="page-header wod-header">
+        <span class="eyebrow">TREINO DO DIA</span>
+        <h1>Metcon</h1>
+        <p>28 de julho • Envoke Training 30</p>
+      </header>
+      <div class="content workout">
+        <div class="coach-note"><span>COACH MOBILITY</span><p>Priorize a qualidade do movimento. Adapte a carga sempre que necessário.</p></div>
+        <article>
+          <span class="workout-number">01</span>
+          <div><h2>Aquecimento</h2><p>3 rounds</p><ul><li>60 m Overhead Carry</li><li>10 Ground to Overhead</li><li>10 Halos</li></ul></div>
+        </article>
+        <article>
+          <span class="workout-number">02</span>
+          <div><h2>Skill bar</h2><p>Técnica</p><ul><li>Hang Power Clean & Jerk</li></ul></div>
+        </article>
+        <article>
+          <span class="workout-number">03</span>
+          <div><h2>WOD</h2><p>EMOM • 24 rounds</p><ul><li>20 Back Squats</li><li>Máx. Box Jump / Step Up</li><li>20 Double Kettlebell Deadlift</li><li>Máx. Double / Single Under</li></ul></div>
+        </article>
+        <button class="primary">REGISTRAR RESULTADO →</button>
+      </div>
+    </section>
+
+    <section class="screen" id="profile" data-screen="profile">
+      <header class="profile-header">
+        <div class="profile-photo">AM</div>
+        <span class="eyebrow">ATLETA ENVOKE</span>
+        <h1>Adair Melo Junior</h1>
+        <p>Plano ativo • Válido até 19 jan. 2027</p>
+      </header>
+      <div class="content">
+        <div class="stats">
+          <div><strong>14</strong><span>NÍVEL</span></div>
+          <div><strong>06</strong><span>CHECK-INS</span></div>
+          <div><strong>02</strong><span>SEMANAS</span></div>
+        </div>
+        <section>
+          <div class="section-heading"><h2>Sua semana</h2><span class="status">1 DE 6</span></div>
+          <div class="week">
+            <span>D<b></b></span><span>S<b class="done">✓</b></span><span>T<b></b></span><span>Q<b></b></span><span>Q<b></b></span><span>S<b></b></span><span>S<b></b></span>
+          </div>
+        </section>
+        <div class="profile-links">
+          <button>Histórico de treinos <b>→</b></button>
+          <button>Recordes pessoais <b>→</b></button>
+          <button>Avaliações físicas <b>→</b></button>
+          <button>Contrato e pagamentos <b>→</b></button>
+          <button>Configurações <b>→</b></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="menu" data-screen="menu">
+      <header class="page-header menu-header">
+        <span class="eyebrow">SUA CONTA</span>
+        <h1>Menu</h1>
+        <p>Acesse seus treinos, serviços e configurações.</p>
+      </header>
+      <div class="content">
+        <div class="menu-user">
+          <div class="avatar">AM</div>
+          <div><strong>Adair Melo Junior</strong><span>Plano ativo</span></div>
+          <button data-go="profile">VER PERFIL →</button>
+        </div>
+        <div class="menu-group">
+          <span>TREINO</span>
+          <button data-go="wod">Treino do dia <b>→</b></button>
+          <button>Histórico de treinos <b>→</b></button>
+          <button>Recordes pessoais <b>→</b></button>
+          <button>Timer <b>→</b></button>
+        </div>
+        <div class="menu-group">
+          <span>SERVIÇOS</span>
+          <button>Contrato e pagamentos <b>→</b></button>
+          <button>Avaliações físicas <b>→</b></button>
+          <button>Fale com a Envoke <b>→</b></button>
+        </div>
+        <div class="menu-group">
+          <span>CONTA</span>
+          <button>Configurações <b>→</b></button>
+          <button class="logout">Sair</button>
+        </div>
+      </div>
+    </section>
+
+    <nav class="bottom-nav" aria-label="Navegação principal">
+      <button class="active" data-go="home"><span>⌂</span>Início</button>
+      <button data-go="checkin"><span>✓</span>Check-in</button>
+      <button class="wod-button" data-go="wod"><span>EVK</span>WOD</button>
+      <button data-go="profile"><span>○</span>Perfil</button>
+      <button data-go="menu"><span class="hamburger">☰</span>Menu</button>
+    </nav>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
