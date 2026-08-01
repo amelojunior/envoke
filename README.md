@@ -5,6 +5,7 @@ Aplicativo de gestão e relacionamento da Envoke Training.
 ## Documentação
 
 - [Fundamentos da marca](docs/fundamentos-da-marca.md)
+- [Publicação do protótipo](docs/publicacao-do-prototipo.md)
 
 ## Protótipo HTML
 
